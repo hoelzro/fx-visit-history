@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Visit History",
+  "version": "1.1",
+  "author": "Rob Hoelz",
+
+  "description": "Shows your first and most recent visit to a page",
+  "page_action": {
+      "browser_style": true,
+      "default_icon": "icons/clock.svg",
+      "default_title": "Most recent visit",
+      "default_popup": "popup.html",
+      "show_matches": ["<all_urls>"]
+  },
+  "permissions": [
+      "history",
+      "tabs"
+  ]
+}
