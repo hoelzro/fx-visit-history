@@ -13,11 +13,11 @@ browser.tabs.query({active: true, currentWindow: true}).then(function([tab]) {
             let numVisits = visits.length - 1;
             let firstVisitDate = new Date(visits[visits.length - 1].visitTime);
             firstVisitDate = firstVisitDate.toDateString() + ' ' + firstVisitDate.toTimeString();
-            info.innerHTML = `You have visited this page ${numVisits} time(s) between your first visit on ${firstVisitDate} and your last visit on ${lastVisitDate}`;
+            info.innerText = `You have visited this page ${numVisits} time(s) between your first visit on ${firstVisitDate} and your last visit on ${lastVisitDate}`;
         } else {
-            info.innerHTML = `Your last and only visit was on ${lastVisitDate}`;
+            info.innerText = `Your last and only visit was on ${lastVisitDate}`;
         }
     } else {
-        info.innerHTML = 'This is your first visit to this page';
+        info.innerText = 'This is your first visit to this page';
     }
 });
